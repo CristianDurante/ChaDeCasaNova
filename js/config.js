@@ -7,11 +7,11 @@ const SITE_CONFIG = {
 
   pix: {
     // Nome do recebedor no Pix (max. 25 caracteres, sem acentos no QR)
-    receiverName: "",
+    receiverName: "Aline",
     // Chave Pix (e-mail, telefone, CPF, CNPJ ou chave aleatória)
-    pixKey: "",
+    pixKey: "alinezuna@hotmail.com",
     // Cidade do recebedor (necessaria para o BR Code)
-    city: "",
+    city: "Araraquara",
     // Valor opcional no formato 150.00. Deixe vazio para o convidado escolher.
     amount: ""
   }
