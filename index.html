@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Convite digital do nosso chá de casa nova. Contribua com carinho para nossa máquina de lavar.">
+  <title>Nosso Chá de Casa Nova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="page">
+    <header class="header">
+      <svg class="home-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M24 8.5 8 21.2v18.3h11.2V28.4h9.6v11.1H40V21.2L24 8.5zm0-4.3 18.8 14.9a1.5 1.5 0 0 1 .6 1.2v20.7A2.5 2.5 0 0 1 40.9 43H28.8a1.5 1.5 0 0 1-1.5-1.5V30.4h-6.6v11.1A1.5 1.5 0 0 1 19.2 43H7.1A2.5 2.5 0 0 1 4.6 40.5V20.3a1.5 1.5 0 0 1 .6-1.2L24 4.2z"/>
+      </svg>
+      <h1>Nosso Chá de Casa Nova</h1>
+      <p id="coupleNames" class="couple-names is-empty"></p>
+    </header>
+
+    <main id="conteudo">
+      <section class="card hero" aria-labelledby="sonho-titulo">
+        <h2 id="sonho-titulo">Um novo lar, muitos sonhos e uma ajudinha especial.</h2>
+        <p>Estamos começando uma nova fase e construindo, aos pouquinhos, o nosso cantinho.</p>
+        <p>Para deixar essa nova etapa ainda mais especial, escolhemos um presente que fará parte da nossa rotina: nossa máquina de lavar!</p>
+        <p>Se você quiser fazer parte desse sonho, qualquer contribuição será recebida com muito carinho e gratidão. O importante é ter você participando desse momento com a gente!</p>
+
+        <figure class="machine-frame">
+          <img id="machinePhoto" alt="Foto da nossa máquina de lavar" hidden>
+          <div id="machinePlaceholder" class="machine-placeholder">
+            <img src="images/placeholder-maquina.svg" alt="Ilustração da máquina de lavar, aguardando nossa foto">
+          </div>
+        </figure>
+
+        <div class="cta-wrap">
+          <a class="btn" href="#pix">Quero fazer parte desse sonho</a>
+        </div>
+      </section>
+
+      <section id="pix" class="card pix" aria-labelledby="pix-titulo">
+        <h2 id="pix-titulo">Ajude a realizar nosso sonho</h2>
+        <p class="pix-intro">Preparamos uma maneira simples de você contribuir com nosso presente de casa nova. É rapidinho e feito com muito carinho!</p>
+
+        <div id="pixSoon" class="pix-soon">O Pix estará disponível em breve</div>
+
+        <div id="pixContent" class="pix-content" hidden>
+          <div class="pix-grid">
+            <div class="qr-box">
+              <h3>QR Code Pix</h3>
+              <div id="qrcode" role="img" aria-label="QR Code Pix para contribuição"></div>
+            </div>
+            <div class="pix-key-box">
+              <h3>Chave Pix</h3>
+              <p id="pixKeyValue" class="pix-key-value"></p>
+              <button type="button" class="btn" id="copyPixBtn">Copiar chave Pix</button>
+              <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+          <ol class="steps">
+            <li data-step="1">Abra o aplicativo do seu banco.</li>
+            <li data-step="2">Escolha a opção Pix e, em seguida, pagar com QR Code ou chave.</li>
+            <li data-step="3">Escaneie o código ou cole a chave copiada e confirme o valor que desejar.</li>
+          </ol>
+          <p class="mobile-hint">Se o QR Code estiver na tela do mesmo celular, copie a chave Pix e cole no aplicativo do banco.</p>
+        </div>
+      </section>
+
+      <section class="card thanks" aria-labelledby="thanks-titulo">
+        <h2 id="thanks-titulo">Com carinho, obrigado</h2>
+        <p>Cada contribuição, independentemente do valor, nos aproxima um pouquinho mais desse sonho.</p>
+        <p>Obrigado por fazer parte da nossa história e por torcer pelo nosso novo lar. Cada gesto de carinho torna esse momento ainda mais especial!</p>
+        <div class="thanks-icons" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 4.2 4 13.7v13.1h9V18h6v8.8h9V13.7L16 4.2z"/></svg>
+          <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 27.2 6.8 18a6.4 6.4 0 0 1 9.1-9l.1.1.1-.1a6.4 6.4 0 0 1 9.1 9z"/></svg>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Feito com carinho para celebrar nosso novo lar. 🏡</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/pix.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

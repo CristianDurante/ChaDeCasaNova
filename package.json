@@ -1,0 +1,10 @@
+{
+  "name": "cha-de-casa-nova",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page para convite de chá de casa nova",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "test": "node tests/smoke-test.mjs"
+  }
+}
