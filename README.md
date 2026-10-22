@@ -6,8 +6,14 @@ Landing page responsiva para receber contribuições por Pix em um convite digit
 
 1. Abra o projeto na raiz.
 2. Execute:
-   - `python -m http.server 3000`
+   - `npm start`
 3. Acesse `http://localhost:3000`.
+
+## Testes e atualização do QR Code
+
+- Execute `npm test` para rodar os testes funcionais rápidos.
+- Se atualizar a biblioteca de QR Code, gere novamente o arquivo local com `npm run build:qr`.
+- A biblioteca é servida pelo próprio site, sem depender de CDN externo.
 
 ## Configuração do Pix
 

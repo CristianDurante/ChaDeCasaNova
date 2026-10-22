@@ -4,7 +4,14 @@
   "private": true,
   "description": "Landing page para convite de chá de casa nova",
   "scripts": {
-    "start": "python -m http.server 3000",
-    "test": "node tests/smoke-test.mjs"
+    "start": "npx --yes http-server . -p 3000",
+    "test": "node tests/smoke-test.mjs",
+    "build:qr": "esbuild node_modules/qrcode/lib/browser.js --bundle --minify --platform=browser --format=iife --global-name=QRCode --outfile=js/qrcode.min.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }

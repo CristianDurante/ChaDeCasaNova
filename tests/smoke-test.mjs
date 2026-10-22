@@ -58,5 +58,7 @@ assert.match(html, /Nosso Chá de Casa Nova/);
 assert.match(html, /css\/styles.css/);
 assert.match(html, /js\/config.js/);
 assert.match(html, /js\/pix.js/);
+assert.match(html, /js\/qrcode\.min\.js/);
+assert.ok(fs.existsSync(path.join(projectRoot, 'js', 'qrcode.min.js')));
 
 console.log('Smoke tests passed: Pix validation, payload generation and page assets are working.');
